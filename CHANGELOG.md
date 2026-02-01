@@ -1,3 +1,14 @@
+## 13.3.0 - 2026-02-01
+### Added
+- OpenSymbol fonts mapping to Noto Sans Symbols
+- KWin addons
+### Changed
+- tuned-ppd instead of power-profiles-daemon
+- Firmware dependencies reviewed
+- Printing dependencies reviewed
+### Removed
+- VDPAU modules
+
 ## 13.2.0 - 2025-12-07
 ### Added
 - Utils for KDE info center

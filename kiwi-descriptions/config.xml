@@ -8,7 +8,7 @@
 	</description>
 	<preferences>
 		<release-version>13</release-version>
-		<version>13.2.0</version>
+		<version>13.3.0</version>
 		<packagemanager>apt</packagemanager>
 		<rpm-check-signatures>false</rpm-check-signatures>
 		<locale>en_US</locale>

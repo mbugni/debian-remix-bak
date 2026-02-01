@@ -9,7 +9,7 @@ Main goals of this remix are:
 * adding common extra-repos
 * supporting external devices (like printers and scanners)
 
-## How to build the LiveCD
+## How to build the LiveCD (on Debian 13)
 [See a detailed description][03] about how to build a live media using kiwi-ng.
 
 ### Prepare the working directories

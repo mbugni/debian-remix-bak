@@ -9,7 +9,7 @@ services:
     build:
       context: .
       args:
-        DEBIAN_VERSION: "13.2"
+        DEBIAN_VERSION: "13.3"
     volumes:
       - "/dev:/dev"
       - ".:/live/source:ro"

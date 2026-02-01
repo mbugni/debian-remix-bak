@@ -12,7 +12,6 @@
 	</profiles>
 	<packages type="image" profiles="Desktop">
 		<!-- Display drivers -->
-		<package name="vdpau-driver-all"/>
 		<package name="va-driver-all"/>
 		<package name="mesa-vulkan-drivers"/>
 		<package name="xserver-xorg-video-all"/>
@@ -26,11 +25,9 @@
 		<package name="fonts-noto-core"/>
 		<package name="fonts-noto-mono"/>
 		<package name="fonts-noto-color-emoji"/>
-		<!-- Flatpak -->
-		<package name="fonts-opensymbol"/>
-		<package name="flatpak"/>
 		<!-- Multimedia -->
 		<package name="alsa-utils"/>
+		<package name="alsa-ucm-conf"/> <!-- ALSA Use Case Manager -->
 		<package name="ffmpeg"/>
 		<package name="gstreamer1.0-packagekit"/>
 		<package name="gstreamer1.0-pipewire"/>
@@ -46,9 +43,11 @@
 		<!-- Networking -->
 		<package name="firewall-config"/>
 		<!-- System -->
-		<package name="power-profiles-daemon"/>
-		<package name="upower"/>
+		<package name="flatpak"/>
 		<package name="lm-sensors"/>
+		<package name="tuned-ppd"/>
+		<package name="udisks2"/>
+		<package name="upower"/>
 		<!-- Desktop -->
 		<package name="desktop-file-utils"/>
 		<package name="laptop-detect"/>
@@ -85,6 +84,7 @@
 		<package name="ktexteditor-katepart"/>
 		<package name="kwalletmanager"/>
 		<package name="kwin-x11"/>
+		<package name="kwin-addons"/>
 		<package name="kwin-style-breeze"/>
 		<package name="libpam-kwallet5"/>
 		<package name="plasma-desktop"/>
@@ -94,7 +94,7 @@
 		<package name="milou"/>
 		<package name="plasma-nm"/><!-- Network Manager -->
 		<package name="plasma-pa"/><!-- Pulse Audio -->
-        <package name="plasma-systemmonitor"/>
+		<package name="plasma-systemmonitor"/>
 		<package name="plasma-thunderbolt"/>
 		<package name="plasma-workspace"/>
 		<package name="polkit-kde-agent-1"/>

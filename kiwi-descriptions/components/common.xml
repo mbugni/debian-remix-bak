@@ -10,24 +10,33 @@
 		<package name="console-setup-linux"/>
 		<package name="curl"/>
 		<package name="sudo"/>
-		<!-- Hardware support -->
+		<!-- Firmware -->
 		<package name="firmware-linux"/>
+		<package name="firmware-linux-free"/>
 		<package name="firmware-linux-nonfree"/>
-		<package name="firmware-brcm80211"/>
-		<package name="firmware-iwlwifi"/>
-		<package name="firmware-realtek"/>
-		<package name="firmware-intel-graphics"/>
-		<package name="firmware-sof-signed"/>
-		<package name="amd64-microcode"/>
-		<package name="intel-microcode"/>
+		<package name="firmware-misc-nonfree"/>
 		<package name="fwupd"/>
 		<package name="fwupd-amd64-signed" arch="x86_64"/>
+		<!-- Hardware support -->
+		<package name="firmware-amd-graphics"/>
+		<package name="firmware-nvidia-graphics"/>
+		<package name="firmware-intel-graphics"/>
+		<package name="firmware-ath9k-htc"/>
+		<package name="firmware-brcm80211"/>
+		<package name="firmware-carl9170"/>
+		<package name="firmware-iwlwifi"/>
+		<package name="firmware-mediatek"/>
+		<package name="firmware-realtek"/>
+		<package name="firmware-sof-signed"/>
+		<package name="firmware-ti-connectivity"/>
+		<package name="amd64-microcode"/>
+		<package name="intel-microcode"/>
+		<package name="usb-modeswitch"/>
 		<!-- Networking -->
 		<package name="libnss-myhostname"/>
 		<package name="libnss-resolve"/>
 		<package name="network-manager"/>
 		<package name="firewalld"/>
-		<!-- The following is moved to config.sh script to avoid DNS issues during build -->
 		<package name="systemd-resolved"/>
 		<package name="wireless-regdb"/>
 		<package name="wireless-tools"/>
