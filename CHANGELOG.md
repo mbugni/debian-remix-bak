@@ -1,3 +1,9 @@
+## 13.3.1 - 2026-03-05
+### Added
+- KDE Partition Manager
+### Removed
+- Backports repository
+
 ## 13.3.0 - 2026-02-01
 ### Added
 - OpenSymbol fonts mapping to Noto Sans Symbols

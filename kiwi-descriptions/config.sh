@@ -33,11 +33,12 @@ echo 'Lock the root user account'
 passwd -l root
 echo 'Enable livesys session'
 systemctl enable livesys-setup.service
+plymouth_theme="details"
 if [[ "$kiwi_profiles" == *"LiveSystemGraphical"* ]]; then
 	# Setup graphical system
 	systemctl set-default graphical.target
-	# Set up default boot theme
-	/usr/sbin/plymouth-set-default-theme bgrt
+	# Setup graphical boot theme
+	plymouth_theme="bgrt"
 	# Enable remix session settings
 	systemctl --global enable remix-session.service
 	# Set up Flatpak
@@ -46,9 +47,9 @@ if [[ "$kiwi_profiles" == *"LiveSystemGraphical"* ]]; then
 else
 	# Fallback to console system
 	systemctl set-default multi-user.target
-	# Set up default boot theme
-	/usr/sbin/plymouth-set-default-theme details
 fi
+# Setup default boot theme
+/usr/sbin/plymouth-set-default-theme "${plymouth_theme}"
 
 #======================================
 # Setup localization
@@ -68,8 +69,6 @@ fi
 #--------------------------------------
 ## Enable machine system settings
 systemctl enable machine-setup
-## Replace default prompt system wide
-sed -i -e "s/PS1='.*'/\. \/etc\/profile\.d\/color-prompt\.sh/" /etc/bash.bashrc
 ## Update system with latest software
 apt --assume-yes update && apt --assume-yes --fix-broken install && apt --assume-yes upgrade
 

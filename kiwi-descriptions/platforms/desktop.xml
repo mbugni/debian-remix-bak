@@ -71,6 +71,7 @@
 		<!-- package name="kde-config-systemd"/ -->
 		<package name="kde-config-gtk-style"/>
 		<package name="kde-config-gtk-style-preview"/>
+		<package name="partitionmanager"/>
 		<package name="kde-style-breeze"/>
 		<package name="kdegraphics-thumbnailers"/>
 		<package name="plasma-runners-addons"/>

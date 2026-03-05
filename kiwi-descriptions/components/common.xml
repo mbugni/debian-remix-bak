@@ -36,7 +36,7 @@
 		<package name="libnss-myhostname"/>
 		<package name="libnss-resolve"/>
 		<package name="network-manager"/>
-		<package name="firewalld"/>
+		<package name="firewalld"/> <!-- Firewall management -->
 		<package name="systemd-resolved"/>
 		<package name="wireless-regdb"/>
 		<package name="wireless-tools"/>
